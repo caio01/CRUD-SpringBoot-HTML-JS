@@ -1,32 +1,8 @@
 const URL = "http://18.229.123.27:3334"
+var tbody = document.getElementById('tbody')
 
-$(document).ready(function(){
-	// Activate tooltip
-	$('[data-toggle="tooltip"]').tooltip()
-	
-	// Select/Deselect checkboxes
-	var checkbox = $('table tbody input[type="checkbox"]')
-	$("#selectAll").click(function(){
-		if(this.checked){
-			checkbox.each(function(){
-				this.checked = true                       
-			});
-		} else{
-			checkbox.each(function(){
-				this.checked = false                       
-			})
-		} 
-	})
-	checkbox.click(function(){
-		if(!this.checked){
-			$("#selectAll").prop("checked", false)
-		}
-	})
-})
-let clients
 fetch(`${URL}/clients`)
   .then(response => response.json())
-  .then(clients => clients = clients)
   .then(clients => clients?.map(client => {
 
     var tr =
@@ -46,9 +22,6 @@ fetch(`${URL}/clients`)
     tbody.innerHTML += tr
 }))
 
-var tbody = document.getElementById('tbody')
-
-
 
 function addClient() {
   data = {
@@ -64,7 +37,7 @@ function addClient() {
       headers: { 'Content-Type': 'application/json', },
       body: JSON.stringify(data),
     })
-  alert("Client addeded successfuly")
+  alert("Client successfully added")
 }
 
 function loadFormEdit(id) {
@@ -97,7 +70,7 @@ function editClient() {
     },
     body: JSON.stringify(data)
   })
-  alert("Client edited successfuly")
+  alert("Client successfuly edited")
 }
 
 function loadFormDel(id) {
@@ -118,7 +91,7 @@ function deleteClient() {
     }
   })
   .then(response => console.log(response.json()))
-  alert("Client deleted successfuly")
+  alert("Client successfuly deleted")
 }
 
 
