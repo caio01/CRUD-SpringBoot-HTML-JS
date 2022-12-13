@@ -5,7 +5,7 @@
 
 Publicado em: http://ec2-18-229-123-27.sa-east-1.compute.amazonaws.com:8082
 
-Manage Clients é uma aplicação full stack, onde o backend foi desenvolvido em Java / Spring Boot; e o frontend, em HTML, CSS e JavaScript. O banco de dados utilizado foi o MongoDB (Atlas). O projeto está hospedado na Amazon Web Service, utilizando uma instância EC2 com o Ubuntu. Para o auxílio na manutenção da aplicações, está sendo utilizada a biblioteca PM2 desenvolvida em NodeJS, a qual promete deixar os serviços disponíveis 24/7.
+Manage Clients é uma aplicação full stack, onde o backend (https://github.com/caio01/ManageClients-CRUD-BackEnd) foi desenvolvido em Java / Spring Boot; e o frontend, em HTML, CSS e JavaScript. O banco de dados utilizado foi o MongoDB (Atlas). O projeto está hospedado na Amazon Web Service, utilizando uma instância EC2 com o Ubuntu. Para o auxílio na manutenção da aplicações, está sendo utilizada a biblioteca PM2 desenvolvida em NodeJS, a qual promete deixar os serviços disponíveis 24/7.
 
 Esse projeto busca colocar em prática os conhecimentos adquiridos nas linguagens mencionadas acima, com a construção de uma aplicação simples, porém, completa, com a persistência dos dados em banco NoSQL e todos os métodos de uma API implementados (CREATE, READ< UPDATE, DELETE). No FrontEnd, foi utilizado um modelo bootstrap e implementada uma paginação simples, que auxilia na visualização da tabela.
 
