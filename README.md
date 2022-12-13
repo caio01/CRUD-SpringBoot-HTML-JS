@@ -1,5 +1,5 @@
 # FrontEnd-CRUD-ManageClients 
-[![NPM](https://img.shields.io/npm/l/react)](https://github.com/caio01/ManageClients-CRUD-FrontEnd/blob/master/LICENCE) 
+[![NPM](https://img.shields.io/npm/l/react)](https://github.com/caio01/ManageClients-CRUD-FrontEnd/blob/master/LICENSE) 
 
 # Sobre o projeto
 
