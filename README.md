@@ -18,10 +18,8 @@ Esse projeto busca colocar em prática os conhecimentos adquiridos nas linguagen
 ## Front end
 - HTML / CSS / JavaScript
 - Bootstrap
-## Implantação em produção
-- Back end: AWS
-- Front end web: AWS
-- Banco de dados: MongoDB (Atlas)
+## Banco de Dados
+-  MongoDB (Atlas)
 
 # Autor
 
