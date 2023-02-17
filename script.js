@@ -1,4 +1,4 @@
-const URL = "http://18.229.123.27:3334"
+const URL = "http://caiooliveira.ddns.net:3334"
 var current_page = 1
 var records_per_page = 5
 var lengthClients
